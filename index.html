@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Academy Liverpool F.C.</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1 id="title">Survey Akademy Liverpool F.C</h1>
+    <p id="description">Thank you for input this form</p>
+    <form id="survey-form">
+        <label for="name" id="name-label">
+            Name
+            <input type="text" id="name" placeholder="Enter your name" required />
+        </label>
+
+        <label for="email" id="email-label">
+            Email
+            <input type="email" id="email" placeholder="Enter your email" required />
+        </label>
+
+        <label for="number" id="number-label">
+            Age
+            <input type="number" id="number" placeholder="How old are you?" min="10" max="20"/>
+        </label>
+
+        <label for="dropdown" id="email-label">
+            Position player
+            <select id="dropdown">
+                <option>Goalkeeper</option>
+                <option>Defender</option>
+                <option>Midfielder</option>
+                <option>Forward</option>
+            </select>
+        </label>
+
+        <p class="health" name="health">Player health</p>
+            <div>
+                <input type="radio" id="injury" name="heath" value="Injury" class="radio">
+                <label for="injury" class="radio">
+                    Injury
+                </label>
+            </div>
+            <div>
+                <input type="radio" id="fit" name="heath" value="Fit" class="radio">
+                <label for="fit" class="radio">
+                    Fit
+                </label>
+            </div>
+
+        <p class="health" name="health">Player skill</p>
+            <div>
+                <input type="checkbox" id="skill1" name="skill" value="skill1" class="checkbox">
+                <label for="skill1" class="checkbox">
+                    Shooting
+                </label>
+            </div>
+            <div>
+                <input type="checkbox" id="skill2" name="skill" value="skill2" class="checkbox">
+                <label for="skill2" class="checkbox">
+                    Dribbling
+                </label>
+            </div>
+            <div>
+                <input type="checkbox" id="skill3" name="skill" value="skill3" class="checkbox">
+                <label for="skill3" class="checkbox">
+                    Free kick
+                </label>
+            </div>
+            <div>
+                <input type="checkbox" id="skill4" name="skill" value="skill4" class="checkbox">
+                <label for="skill4" class="checkbox">
+                    Corner kick
+                </label>
+            </div>
+            <div>
+                <input type="checkbox" id="skill5" name="skill" value="skill5" class="checkbox">
+                <label for="skill5" class="checkbox">
+                    Penalty kick
+                </label>
+            </div><br>
+
+
+        <label for="resume" id="textarea-label">
+                Resume your profil
+            <textarea id="resume" name="textarea" rows="4" cols="50" >
+            </textarea>
+        </label>
+
+        <button type="submit" id="submit">Submit</button>
+        <button type="reset" id="reset">Reset</button>
+        <!--
+        <label for="sumbit" id="sumbit-label">
+        <button type="submit" value="Submit" class="enter" id="submit"> Submit
+        </label>
+
+        <label for="reset" id="reset-label">
+        <button type="reset" value="Reset" class="enter" id="reset"> Reset
+        </label>
+    -->
+    </form>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
